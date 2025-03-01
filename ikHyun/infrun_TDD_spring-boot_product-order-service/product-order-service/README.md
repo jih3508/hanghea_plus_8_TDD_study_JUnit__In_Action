@@ -24,6 +24,4 @@ spring.jpa.properties.hibernate.format_sql=true
 ```
 
 ## 강의 노트
-- [색션2 상품 등록 API 개발](./description/CH02 상품 등록 API 개발.md)
-
-
+- [색션2 상품 등록 API 개발](./description/CH02%20상품%20등록%20API%20개발.md)
