@@ -339,3 +339,18 @@ public class ApiTest {
     }
 }
 ```
+#### Log
+```text
+Hibernate: 
+    
+SET
+    REFERENTIAL_INTEGRITY FALSE
+Hibernate: 
+    TRUNCATE TABLE products
+Hibernate: 
+    ALTER TABLE products ALTER COLUMN ID RESTART WITH 1
+Hibernate: 
+    
+SET
+    REFERENTIAL_INTEGRITY TRUE
+```
