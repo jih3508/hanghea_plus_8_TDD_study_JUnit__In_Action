@@ -23,4 +23,16 @@ public class ProductSteps {
         final DiscountPolicy discountPolicy = DiscountPolicy.NONE;
         return new AddProductRequest(name, price, discountPolicy);
     }
+
+    public static ExtractableResponse<Response> 상품조회요청(final Long productId){
+        return RestAssured.given().log().all()
+                .when()
+                .get("/products/{productId}", productId)
+                .then().log().all()
+                .extract();
+    }
+
+    public static UpdateProductRequest 상품수정요청_생성(){
+        return new UpdateProductRequest("상품 수정", 2000, DiscountPolicy.NONE);
+    }
 }
