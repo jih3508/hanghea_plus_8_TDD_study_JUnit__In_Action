@@ -238,7 +238,7 @@ Hibernate:
         product0_.id=?
 ```
 
-## API로테스트로 전환하기
+## API로 테스트로 전환하기
 
 ### ProductService Request Mapping URL에 추가
 ```java

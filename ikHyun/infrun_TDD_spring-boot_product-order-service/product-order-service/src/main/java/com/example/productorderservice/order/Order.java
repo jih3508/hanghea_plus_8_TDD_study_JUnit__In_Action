@@ -30,4 +30,7 @@ public class Order {
     }
 
 
+    public int getTotalPrice() {
+        return product.getDiscountedPrice() * this.quantity;
+    }
 }
