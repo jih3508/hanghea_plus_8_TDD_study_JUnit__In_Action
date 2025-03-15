@@ -1,6 +1,9 @@
 package com.example.productorderservice.product;
 
 import com.example.productorderservice.ApiTest;
+import com.example.productorderservice.product.adapter.ProductRepository;
+import com.example.productorderservice.product.application.service.AddProductRequest;
+import com.example.productorderservice.product.application.service.ProductService;
 import io.restassured.RestAssured;
 import io.restassured.response.ExtractableResponse;
 import io.restassured.response.Response;
@@ -22,7 +25,7 @@ public class ProductApiTest extends ApiTest {
 
     @Test
     void 상품등록(){
-        final  AddProductRequest request = ProductSteps.상품등록요청_생성();
+        final AddProductRequest request = ProductSteps.상품등록요청_생성();
 
         // API 요청
         final ExtractableResponse<Response> response = ProductSteps.상품등록요청(request);
