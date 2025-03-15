@@ -8,6 +8,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import org.springframework.transaction.annotation.Transactional;
+
 @RestController
 @RequestMapping("/payments")
 public class PaymentService {
@@ -19,6 +21,7 @@ public class PaymentService {
     }
 
     @PostMapping
+    @Transactional
     public ResponseEntity<Void> payment(@RequestBody final PaymentRequest request) {
         Order order = paymentPort.getOrder(request.orderId());
 
