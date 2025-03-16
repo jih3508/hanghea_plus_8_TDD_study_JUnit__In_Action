@@ -29,3 +29,4 @@ spring.jpa.properties.hibernate.format_sql=true
 - [색션 4. 상품 수정 API 개발](./description/CH04%20상품%20수정%20API%20개발.md)
 - [색션 5. 상품 주문 API 개발](./description/CH05%20상품%20주문%20API%20개발.md)
 - [색션 6. 주문 걀제 API 개발](./description/CH06%20주문%20결제%20API%20개발.md)
+- [색션 7. 상세 패키지 구조 만들기](./description/CH07%20상세%20패키지%20구조%20만들기.md)
