@@ -28,4 +28,8 @@ public class Coffee {
     @Column(columnDefinition = "default 0")
     private Long hits; // 주문 횟수
 
+    public void addHist(Long hit){
+        this.hits += hit;
+    }
+
 }

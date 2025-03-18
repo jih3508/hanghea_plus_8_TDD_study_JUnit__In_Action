@@ -63,8 +63,10 @@ public class OrderServiceImpl implements OrderService {
                     .orderGroup(orderGroup)
                     .price(coffeePrice)
                     .build();
-
             repository.save(order);
+
+            coffee.addHist(order.getQuantity());
+            coffeeRepository.save(coffee);
 
             totalPrice = totalPrice.add(coffeePrice);
 

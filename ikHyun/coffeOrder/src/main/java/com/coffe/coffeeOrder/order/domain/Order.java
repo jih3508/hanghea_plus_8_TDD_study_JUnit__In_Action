@@ -22,14 +22,16 @@ public class Order {
     @Column(nullable = false)
     private Long id;
 
-    @OneToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+    @JoinColumn(name = "coffee_id")
     private Coffee coffee;
 
     private Long quantity; // 수량
 
     private BigDecimal price; // 커피 항목당 구매
 
-    @ManyToOne(cascade = CascadeType.ALL)
+    @ManyToOne
+    @JoinColumn(name = "order_group_id")
     private OrderGroup orderGroup;
 
 }

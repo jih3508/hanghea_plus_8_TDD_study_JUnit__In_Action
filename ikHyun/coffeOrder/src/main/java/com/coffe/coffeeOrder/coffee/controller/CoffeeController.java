@@ -30,6 +30,4 @@ public class CoffeeController {
         return service.getList();
     }
 
-
-
 }
